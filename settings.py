@@ -1,12 +1,15 @@
 from os import environ
 
-
+ 
 SESSION_CONFIGS = [
     dict(
         name='guess_two_thirds',
         display_name="Guess 2/3 of the Average",
-        app_sequence=['guess_two_thirds', 'payment_info'],
+        app_sequence=['guess_two_thirds', 'payment_info', 'payment'],
         num_demo_participants=3,
+        expShortName="TestExp", # Replace with your values
+        expId=0000000000, # Replace with your values
+        sessId=0000000000, # Replace with your values
     ),
     dict(
         name='survey', app_sequence=['survey', 'payment_info'], num_demo_participants=1
